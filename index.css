@@ -294,3 +294,150 @@ input[type="date"] {
         color: rgb(211, 2, 47);
     }
 }
+
+/* Aniket's CSS */
+.flight-info {
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 25px;
+    margin-top: 50px;
+}
+
+.info-container {
+    display: flex;
+    gap: 15px;
+    width: 270px;
+
+    &>img {
+        height: 30px;
+        width: 30px;
+    }
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+    &>h2 {
+        font-size: 18px;
+        font-family: "Poppins", sans-serif;
+        font-weight: 500;
+        color: #030c16;
+    }
+
+    p {
+        font-size: 15px;
+        font-weight: 900;
+        color: #030c16;
+    }
+
+    a {
+        color: #da0530;
+        font-size: 13px;
+        font-family: "Poppins", sans-serif;
+        font-weight: 300;
+        transition: 0.3s ease;
+      
+    }
+     a:hover{
+        color: #980f2f;
+    }
+
+}
+
+.airline-details {
+    margin: auto;
+    display: flex;
+    margin-top: 50px;
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.card-container {
+    width: 370px;
+    display: flex;
+    gap: 40px;
+    
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+    h2{
+        font-family: "Poppins", sans-serif;
+        font-weight: 300;
+    }
+
+    &>img {
+        width: 360px;
+        height: 250px;
+        border-radius: 4px;
+        object-fit: cover;
+    }
+
+    p {
+        font-family: "Poppins", sans-serif;
+        font-weight: 300;
+
+    }
+
+    &>button {
+        width: 180px;
+        height: 50px;
+        border-radius: 8px;
+        background-color: #ffffff;
+        border: 1px solid #da0530;
+        cursor: pointer;
+        transition: 0.3s ease;
+
+        &>a {
+
+            font-family: "Poppins", sans-serif;
+            font-size: 15px;
+            text-decoration: none;
+            color: #da0530;
+        }
+
+      
+    }
+}
+
+.btn:hover{
+    background-color: #f7e8ebc8;
+    outline: #880d29;
+    
+    &>a:hover {
+        color: #880d29;
+    }
+}
+
+.flight-destinations{
+    margin-top: 50px;
+    width: 80%;
+    margin: auto;
+}
+
+header > h1{
+    font-family: "Poppins", sans-serif;
+    font-weight: 200;
+    font-size: 45px;   
+    margin-top: 50px;
+}
+
+
+.container{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+
