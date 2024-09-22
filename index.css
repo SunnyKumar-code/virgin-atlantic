@@ -296,57 +296,7 @@ input[type="date"] {
 }
 
 /* Aniket's CSS */
-.flight-info {
-    margin-top: 50px;
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 25px;
-    margin-top: 50px;
-}
 
-.info-container {
-    display: flex;
-    gap: 15px;
-    width: 270px;
-
-    &>img {
-        height: 30px;
-        width: 30px;
-    }
-}
-
-.info {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-
-    &>h2 {
-        font-size: 18px;
-        font-family: "Poppins", sans-serif;
-        font-weight: 500;
-        color: #030c16;
-    }
-
-    p {
-        font-size: 15px;
-        font-weight: 900;
-        color: #030c16;
-    }
-
-    a {
-        color: #da0530;
-        font-size: 13px;
-        font-family: "Poppins", sans-serif;
-        font-weight: 300;
-        transition: 0.3s ease;
-      
-    }
-     a:hover{
-        color: #980f2f;
-    }
-
-}
 
 .airline-details {
     margin: auto;
@@ -371,7 +321,7 @@ input[type="date"] {
     gap: 20px;
 
     h2{
-        font-family: "Poppins", sans-serif;
+       
         font-weight: 300;
     }
 
@@ -383,7 +333,7 @@ input[type="date"] {
     }
 
     p {
-        font-family: "Poppins", sans-serif;
+        
         font-weight: 300;
 
     }
@@ -399,7 +349,7 @@ input[type="date"] {
 
         &>a {
 
-            font-family: "Poppins", sans-serif;
+            
             font-size: 15px;
             text-decoration: none;
             color: #da0530;
@@ -420,12 +370,12 @@ input[type="date"] {
 
 .flight-destinations{
     margin-top: 50px;
-    width: 80%;
+    max-width: 1200px;
     margin: auto;
 }
 
 header > h1{
-    font-family: "Poppins", sans-serif;
+    
     font-weight: 200;
     font-size: 45px;   
     margin-top: 50px;
