@@ -277,87 +277,212 @@ body {
 
 /* Aniket's CSS */
 
+
+
 .airline-details {
-  min-width: 1200px;
-  margin: auto;
-  display: flex;
-  margin-top: 50px;
-  gap: 30px;
-  flex-wrap: wrap;
-  justify-content: center;
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    margin-top: 50px;
+    gap: 30px;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
-.mid-card-container {
-  width: 370px;
-  display: flex;
-  gap: 40px;
+.mid-card-container{
+    width: 100%;
+    margin: 30px 0;
+}
+
+.card-cont{
+    
+    min-width: 1200px;
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+    flex-wrap: wrap;
+
+    
 }
 
 .mid-card {
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
 
   h2 {
     font-weight: 300;
   }
 
-  & > img {
-    width: 360px;
-    height: 250px;
-    border-radius: 4px;
-    object-fit: cover;
-  }
+    &>img {
+        width: 360px;
+        height: 250px;
+        border-radius: 4px;
+        object-fit: cover;
+        cursor: pointer;
+        transition: 0.3s ease;
+
+    }
+
+    & > img:hover{
+        opacity: 0.7;
+    }
 
   p {
     font-weight: 300;
   }
 
-  & > button {
-    width: 180px;
+    &>button {
+        width: 180px;
+        height: 50px;
+        border-radius: 8px;
+        background-color: #ffffff;
+        border: 1px solid #da0530;
+        cursor: pointer;
+        transition: 0.3s ease;
+        font-family: 'Montserrat', sans-serif;
+
+        &>a {
+            width: 100%;
+            height: 100%;
+            font-size: 15px;
+            text-decoration: none;
+            color: #da0530;
+        }
+
+      
+    }
+}
+
+.btn:hover{
+    background-color: #f7e8ebc8;
+   
+    outline: #880d29;
+    
+     &>a:hover {
+        color: #880d29;
+    } 
+}
+
+.flight-destinations{
+    margin-top: 50px;
+    max-width: 1200px;
+    margin: auto;
+
+    & > header > p{
+    
+        font-weight: lighter;
+        font-size: 38px;   
+        margin-top: 50px;
+    }
+}
+
+
+
+.more-flights{
+    display: flex;
+    justify-content: space-around;
+    max-width: 1200px;
+    margin: auto;
+    margin-top: 80px;
+}
+
+.more-flights-container{
+    display: flex;
+    align-items: center;
+    width: 50%;
+}
+
+.inner-content{
+    display: flex;
+    flex-direction: column;
+    width: 92%;
+    gap: 20px;
+
+    &> :first-child{
+        font-weight: 300;
+    }
+    & > button{
+        width: 190px;
+        height: 50px;
+        border-radius: 8px;
+        background-color: #ffffff;
+        border: 1px solid #da0530;
+        cursor: pointer;
+        transition: 0.3s ease;
+        font-family: 'Montserrat', sans-serif;
+        &>a {
+            width: 100%;
+            height: 100%;
+            font-size: 15px;
+            text-decoration: none;
+            color: #da0530;
+        }
+    }
+    & >p:first-of-type{
+        font-weight: bold;
+    }
+}
+
+.bus-img img{
+    width: 592px;
+    height: 320px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: 0.3s ease;
+    object-fit: cover;
+
+}
+
+.bus-img img:hover{
+    opacity: 0.8;
+}
+
+.worldwide-dest{
+    max-width: 1200px;
+    margin: auto;
+    margin-top:100px;
+    margin-bottom: 100px;
+
+    &>header>h2{
+        margin-bottom: 30px;
+        font-weight: 300;
+        font-size: 38px;
+    }
+}
+
+
+.c2 img{
+   cursor: pointer;
+}
+
+.cc2{
+
+    &>p:first-of-type{
+        font-weight: bold;
+    }
+}
+
+.card-btn3 button{
+    width: 190px;
     height: 50px;
     border-radius: 8px;
     background-color: #ffffff;
     border: 1px solid #da0530;
     cursor: pointer;
     transition: 0.3s ease;
-
-    & > a {
-      font-size: 15px;
-      text-decoration: none;
-      color: #da0530;
+    font-family: 'Montserrat', sans-serif;
+    &>a {
+        width: 100%;
+        height: 100%;
+        font-size: 15px;
+        text-decoration: none;
+        color: #da0530;
+        font-weight: 450;
     }
-  }
 }
 
-.btn:hover {
-  background-color: #f7e8ebc8;
-  outline: #880d29;
-
-  & > a:hover {
-    color: #880d29;
-  }
-}
-
-.flight-destinations {
-  margin-top: 50px;
-  max-width: 1200px;
-  margin: auto;
-}
-
-header > h1 {
-  font-weight: 200;
-  font-size: 45px;
-  margin-top: 50px;
-}
-
-.mid-container {
-  display: flex;
-  justify-content: center;
-  gap: 20px;
-  flex-wrap: wrap;
-  margin-top: 20px;
-}
 
 /* sachin css */
 
