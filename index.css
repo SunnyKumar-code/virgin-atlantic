@@ -398,7 +398,9 @@ header > h1{
 }
 
 .flying-container{
-    width: 1200px;
+    max-width: 1200px;
+    min-width: 1200px;
+    flex-wrap: wrap;
     height: 100%;
     margin: 0 auto;
     /* border: 1px solid black; */
@@ -423,6 +425,7 @@ header > h1{
 }
 
 .card{
+    
     display: flex;
     flex-direction: column;
     justify-content: start;
