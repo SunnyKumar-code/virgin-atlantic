@@ -18,22 +18,52 @@
                      
              <ul class="nav-list">
                 <li>
-                    <a href="">
-                        <img src="./Assets/asset 19.svg" alt="account">
-                    <p>Flying Club</p>
-                </a>
+                    <div class="dropdown-container">
+                        <input type="checkbox" id="dropdown-toggle" class="dropdown-checkbox">
+                        <label for="dropdown-toggle" class="dropdown-button">
+                            <img src="./Assets/asset 19.svg" alt="account">
+                            Flying Club
+                        </label>
+                        <div class="dropdown-content">
+                            <h3>Flying Club</h3>
+                            <a href="#">My account</a>
+                            <a href="#">Reward seat deals</a>
+                            <a href="#">Reward seat checker</a>
+                            <a href="#">About Flying Club</a>
+                            <a href="#">Join Flying Club</a>
+                        </div>
+                    </div>
                 </li>
                 <li>
-                    <a href="">
-                        <img src="./Assets/asset 21.svg" alt="luggage">
-                    <p>My Booking</p>
-                </a>
+                    <div class="dropdown-container-book">
+                        <input type="checkbox" id="dropdown-toggle-book" class="dropdown-checkbox-book">
+                        <label for="dropdown-toggle-book" class="dropdown-button-book">
+                            <img src="./Assets/asset 21.svg" alt="account">
+                            My Booking
+                        </label>
+                        <div class="dropdown-content-book">
+                            <h3>My Booking</h3>
+                            <a href="#">Manage Booking</a>
+                            <a href="#">Check in</a>
+                            <a href="#">Flight status</a>
+                        </div>
                 </li>
                 <li>
-                    <a href="">
-                        <img src="./Assets/asset 22.svg" alt="menu">
-                    <p>Menu</p>
-                </a>
+                    <div class="dropdown-container">
+                        <input type="checkbox" id="dropdown-toggle" class="dropdown-checkbox">
+                        <label for="dropdown-toggle" class="dropdown-button">
+                            <img src="./Assets/asset 22.svg" alt="account">
+                            Menu
+                        </label>
+                        <div class="dropdown-content">
+                            <h3>Flying Club</h3>
+                            <a href="#">My account</a>
+                            <a href="#">Reward seat deals</a>
+                            <a href="#">Reward seat checker</a>
+                            <a href="#">About Flying Club</a>
+                            <a href="#">Join Flying Club</a>
+                        </div>
+                    </div>
                 </li>
              </ul>
             </div>
@@ -117,7 +147,107 @@
                     </fieldset>
                     <fieldset>
                         <legend>Who</legend>
-                        <input type="text" placeholder="1 Person">
+                        <div class="container-wrapper">
+                            <!-- Checkbox to simulate dropdown -->
+                            <label class="dropdown-label" for="toggleDropdown"><span>1 person</span> <img src="./Assets/asset 38.svg" alt=""></label>
+                            <input type="checkbox" id="toggleDropdown">
+                        
+                            <!-- Container that appears after clicking -->
+                            <div class="container-show">
+                                <h3>Passenger ages at time of travel</h3>
+                        
+                                <!-- Adults -->
+                                <div class="row">
+                                    <div>
+                                        <div class="label">Adults</div>
+                                        <div class="age-group">Age 16 and over</div>
+                                    </div>
+                                    <div>
+                                        <select name="passenger" id="adults">
+                                            <option value="1">1</option>
+                                            <option value="2">2</option>
+                                            <option value="3">3</option>
+                                            <option value="4">4</option>
+                                            <option value="5">5</option>
+                                            <option value="6">6</option>
+                                            <option value="7">7</option>
+                                            <option value="8">8</option>
+                                            <option value="9">9</option>
+                                            <option value="10">10</option>
+                                        </select>
+                                    </div>
+                                </div>
+                        
+                                <!-- Young Adults -->
+                                <div class="row">
+                                    <div>
+                                        <div class="label">Young adults</div>
+                                        <div class="age-group">Age 12 to 15</div>
+                                    </div>
+                                    <div>
+                                        <select name="passenger" id="youngAdults">
+                                            <option value="0">0</option>
+                                            <option value="1">1</option>
+                                            <option value="2">2</option>
+                                            <option value="3">3</option>
+                                            <option value="4">4</option>
+                                            <option value="5">5</option>
+                                            <option value="6">6</option>
+                                            <option value="7">7</option>
+                                            <option value="8">8</option>
+                                            <option value="9">9</option>
+                                            <option value="10">10</option>
+                                        </select>
+                                    </div>
+                                </div>
+                        
+                                <!-- Children -->
+                                <div class="row">
+                                    <div>
+                                        <div class="label">Children</div>
+                                        <div class="age-group">Age 2 to 11</div>
+                                    </div>
+                                    <div>
+                                        <select name="passenger" id="children">
+                                            <option value="0">0</option>
+                                            <option value="1">1</option>
+                                            <option value="2">2</option>
+                                            <option value="3">3</option>
+                                            <option value="4">4</option>
+                                            <option value="5">5</option>
+                                            <option value="6">6</option>
+                                            <option value="7">7</option>
+                                            <option value="8">8</option>
+                                            <option value="9">9</option>
+                                            <option value="10">10</option>
+                                        </select>
+                                    </div>
+                                </div>
+                        
+                                <!-- Lap Infants -->
+                                <div class="row">
+                                    <div>
+                                        <div class="label">Lap infant</div>
+                                        <div class="age-group">Up to 2 years</div>
+                                    </div>
+                                    <div>
+                                        <select name="passenger" id="infants">
+                                            <option value="0">0</option>
+                                            <option value="1">1</option>
+                                            <option value="2">2</option>
+                                            <option value="3">3</option>
+                                            <option value="4">4</option>
+                                            <option value="5">5</option>
+                                            <option value="6">6</option>
+                                            <option value="7">7</option>
+                                            <option value="8">8</option>
+                                            <option value="9">9</option>
+                                            <option value="10">10</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </fieldset>
                     <p><img src="./Assets/asset 45.svg" alt=""> <span>Search</span></p>
                 </div>
