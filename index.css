@@ -299,23 +299,23 @@ input[type="date"] {
 
 
 .airline-details {
+    min-width: 1200px;
     margin: auto;
     display: flex;
     margin-top: 50px;
-    display: flex;
     gap: 30px;
     flex-wrap: wrap;
     justify-content: center;
 }
 
-.card-container {
+.mid-card-container{
     width: 370px;
     display: flex;
     gap: 40px;
     
 }
 
-.card {
+.mid-card {
     display: flex;
     flex-direction: column;
     gap: 20px;
@@ -382,7 +382,7 @@ header > h1{
 }
 
 
-.container{
+.mid-container{
     display: flex;
     justify-content: center;
     gap: 20px;
@@ -391,6 +391,8 @@ header > h1{
 }
 
 /* sachin css */
+
+
 .flying-with-us-container{
     width: 100%;
     height: 100%;   
