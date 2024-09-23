@@ -390,4 +390,361 @@ header > h1{
     margin-top: 20px;
 }
 
+/* sachin css */
+.flying-with-us-container{
+    width: 100%;
+    height: 100%;   
+
+}
+
+.flying-container{
+    width: 1200px;
+    height: 100%;
+    margin: 0 auto;
+    /* border: 1px solid black; */
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: start;
+    gap: 2rem;
+}
+
+.flying-container h2{
+    font-weight: 300;
+    font-size: 2.5rem;
+}
+
+.card-container{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(1,1fr);
+    gap: 1rem;
+}
+
+.card{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    gap: 2rem;
+    /* border: 1px solid green; */
+}
+
+.card-img{
+    width: 100%;
+    height: 50%;
+    border-radius: 5px;
+    transition: 0.7s ease-in-out;
+}
+
+.card-img:hover{    
+    opacity: 0.7;
+}
+
+.card-content{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    gap: 1rem;
+}
+
+.card-content h3{
+    font-weight: 300;
+    font-size: 1.5rem;
+    /* color: purple; */
+}
+
+.card-content p{
+    width: 90%;
+    font-size: 1rem;
+    font-weight: 300;
+}
+
+.card-btn{
+    width: fit-content;
+    border: 1px solid rgb(218, 5, 48);
+    padding:  0.5rem;
+    border-radius: 5px;
+}
+
+.card-btn:hover{
+    border: 1px solid rgb(105, 5, 5);
+    background-color: rgb(250, 250, 250);
+    color: rgb(105, 5, 5) ;
+}
+
+.card-btn a{
+    text-decoration: none;
+    color:rgb(218, 5, 48);
+
+}
+
+.card-btn a:hover{
+    color: rgb(105, 5, 5);
+}
+
+@media screen and (max-width:765px) {
+    .card-container{
+        width: 95%;
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        grid-template-rows: repeat(3,1fr);
+        gap: 1rem;
+    }
+}
+
+
+/* card-container -2 */
+
+.card-container2{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 1rem;
+}
+
+.card2{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    gap: 2rem;
+    /* border: 1px solid green; */
+}
+
+.card-img2{
+    width: 100%;
+    height: 60%;
+    border-radius: 5px;
+    transition: 0.7s ease-in-out;
+}
+
+.card-img2:hover{    
+    opacity: 0.7;
+}
+
+.card-content2{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    gap: 1rem;
+}
+
+.card-content2 h3{
+    font-weight: 300;
+    font-size: 1.5rem;
+    /* color: purple; */
+}
+
+.card-content2 p{
+    width: 90%;
+    font-size: 1rem;
+    font-weight: 300;
+}
+
+.card-btn2{
+    width: fit-content;
+    border: 1px solid rgb(218, 5, 48);
+    padding:  0.5rem;
+    border-radius: 5px;
+}
+
+.card-btn2:hover{
+    border: 1px solid rgb(105, 5, 5);
+    background-color: rgb(250, 250, 250);
+    color: rgb(105, 5, 5) ;
+}
+
+.card-btn2 a{
+    text-decoration: none;
+    color:rgb(218, 5, 48);
+
+}
+
+.card-btn2 a:hover{
+    color: rgb(105, 5, 5);
+}
+
+@media screen and (max-width:765px) {
+    .card-container2{
+        width: 95%;
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        grid-template-rows: repeat(2,1fr);
+        gap: 1rem;
+    }
+}
+
+/* feature-section */
+
+.features-section{
+    width: 100%;
+    background-color: rgb(230, 230, 230);
+    padding: 2rem;
+}
+
+.features-div{
+    width: 1200px;
+    margin: 0 auto;
+    padding: 1rem;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 1rem;
+}
+
+.features-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 1rem;
+}
+
+.features-content h3{
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+.features-content p{
+    font-size: 1rem;
+    font-weight: 300;
+}
+.features-content a{
+    color:rgb(218, 5, 48);
+}
+
+@media screen and (max-width:990px) {
+    
+    .features-div{
+        width: 95%;
+        margin: 0 auto;
+        padding: 1rem;
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows: repeat(2,1fr);
+        gap: 1rem;
+    }
+}
+
+@media screen and (max-width:645px) {
+    
+    .features-div{
+        width: 95%;
+        margin: 0 auto;
+        padding: 1rem;
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        grid-template-rows: repeat(4,1fr);
+        gap: 1rem;
+        
+    }
+    .features-content{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        gap: 1rem;
+        margin-bottom: 2rem;
+    }
+}
+
+/* footer section */
+
+footer{
+    width: 100%;
+    background-color:rgb(13, 22, 31);
+    color: white;
+}
+
+.footer-top{
+    width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    gap: 1rem;
+    /* border: 1px solid white; */
+
+}
+
+.footer-top-left{
+    margin: 2rem 0;
+    /* padding: 0 1rem; */
+    
+}
+
+.footer-top-left h3{
+    padding: 0.5rem 1rem;
+    /* border: 1px solid ; */
+    font-weight: 300;
+    font-size: 1.5rem;
+    transition: 0.5s ease-in;
+    border-radius: 1px;
+}
+
+.footer-top-left h3:hover{
+    background-color: rgba(255, 255, 255, 0.16);
+    
+}
+
+.footer-top-middle{
+    padding: 2rem 0.5rem;
+    width: 100%;
+    /* border: 1px solid; */
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(2,1fr);
+
+}
+
+.footer-top-middle h3{
+    font-weight: 400;
+    padding: 0.5rem 0;
+}
+
+.footer-top-middle li{
+    margin: 0.5rem 0;
+}
+.footer-top-middle li a{
+    color: rgb(229, 229, 229);
+    font-weight: 400;
+    font-size: 0.9rem;
+    transition: 0.2s ease;
+    
+}
+
+.footer-top-middle li a:hover{
+    text-decoration: underline;
+    color: rgb(153, 152, 152);
+}
+
+.footer-top-middle li,a{
+    list-style: none;
+    text-decoration: none;
+}
+
+.footer-top-right{
+    padding: 2rem 0;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: start; */
+    /* align-items: end; */
+    border: 1px solid;
+}
+
+.footer-logo{
+    width: 100%;
+    display: flex;
+    justify-content: end;
+}
+
+/* .footer-social-icon{
+
+} */
 
