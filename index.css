@@ -689,6 +689,7 @@ select {
 .container-2 {
   max-width: 1200px;
   display: flex;
+  justify-content: center;
   align-items: center;
   margin: auto;
   flex-wrap: wrap;
@@ -935,121 +936,7 @@ select {
 }
 
 
-@media screen and (max-width: 1100px) {
-  header>p{
-    text-align: center;
-  }
-  .header-item{
-    padding: 0 1rem;
-  }
-  .more-flights-container{
-    width: 100vw;
-   flex-direction: column-reverse;
-   align-content: center;
-   
-  }
-  .container-2 {
-    margin: 8 rem 0 0 0 ;
-  }
-  .bus-img{
-   max-width: 400px;
-   align-self: center;
-   &>img{
-    width: 100%;
-    height: auto;
-   }
-   .inner-content{
-   width: 70vw;
-   }
-  }
-  .header-funtion{
-   height: 30vh;
-  }
-  .hero-about {
-    width: 80%;
-    height: auto;
-    margin: auto;
-    z-index:0;
-  }
-  label>span{
-   display: none;
-  }
-  
-  
- }
- @media screen and (max-width: 650px) {
-   .header-funtion{
-    height: 31vh;
-   
-   }
-   .container-2 {
-    width: 100%;
-    flex-direction: column;
-    align-items: center;
-    margin: 15rem  0 0 0;
-   }
-   
-  }
-   @media screen and (max-width: 625px) {
-    .header-funtion{
-      height: 40vh;
-     
-     }
-   }
-  @media screen and (max-width: 500px) {
-    .header-funtion{
-     height: 50vh;
-    }
-    .none{
-      display: none;
- 
-    }
-    .hero-about {
-      width: 70%;
-      height: 10rem;
-      margin: auto;
-      gap: 0.5rem;
-      z-index:0;
-      &>h1{
-        font-size: 1rem;
-        font-weight: bold;
-      }
-      &>h3{
-        font-size: 0.8rem;
-      }
-      &>a{
-        width: 50%;
-        padding: 10px;
-        font-size: 0.5rem;
-        
-      }
-    }
-    .container-2 {
-      margin: 25rem  0 0 0;
-     }
-    
-   }
-   @media screen and (max-width: 450px) {
-    .container-2 {
-      margin: 30rem  0 0 0;
-     }
-     .line-two{
-      &>fieldset{
-        height: 0.2rem;
-        &>legend{
-          font-size: 0.5rem;
-        }
-       
-      }
-     }
-    
-   }
-   @media screen and (max-width: 380px) {
-    .container-2 {
-      margin: 35rem  0 0 0;
-     }
-    
-   }
+
    
 /* sachin css */
 
@@ -1069,10 +956,10 @@ select {
 .card-container {
   width: 100%;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   flex-wrap: wrap;
   margin: 2rem 0;
-  gap: 1.5rem;
+  gap: 2rem;
   
 }
 
@@ -1148,6 +1035,7 @@ select {
   max-width: 1200px;
   display: flex;
   justify-content: space-between;
+  justify-content: center;
   align-items: center;
   gap: 2rem;
   flex-wrap: wrap;
@@ -1240,7 +1128,7 @@ select {
 }
 
 .features-content {
-  width: 23%;
+  width: 18rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -1273,7 +1161,6 @@ footer {
   width: 100%;
   background-color: rgb(13, 22, 31);
   color: white;
-  overflow: hidden;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -1283,7 +1170,6 @@ footer {
 
 .footer-top {
   max-width: 1200px;
-  
   margin: 0 auto;
   display: grid;
   grid-template-columns: 1fr 2fr 1fr;
@@ -1296,7 +1182,7 @@ footer {
 }
 
 .footer-top-left h3 {
-  padding: 0.5rem 1rem;
+  padding: 0.5rem 0;
   font-weight: 300;
   font-size: 1.5rem;
   transition: 0.5s ease;
@@ -1386,13 +1272,12 @@ a {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  overflow: hidden;
+  text-align: center;
   flex-wrap: wrap;
 }
 
 .footer-middle-content{
   max-width: 1200px;
-  min-width: 1200px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -1403,7 +1288,7 @@ a {
 }
 
 .fmc-top{
-  width: 100%;
+  max-width: 1200px;
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
@@ -1449,10 +1334,10 @@ a {
 
 .footer-bottom-content{
   max-width: 1200px;
-  min-width: 1200px;
   margin: 0 auto;  
   display: flex;
   justify-content: center;
+  
   padding: 2rem 0;
 }
 
@@ -1469,3 +1354,162 @@ a {
 .footer-bottom-text{
   font-size: 0.75rem;
 }
+@media screen and (max-width: 1100px) {
+  header>p{
+    text-align: center;
+  }
+  .header-item{
+    padding: 0 1rem;
+  }
+  .more-flights-container{
+    width: 100vw;
+   flex-direction: column-reverse;
+   align-content: center;
+   
+  }
+  .container-2 {
+    margin: 8rem 0 0 0 ;
+  }
+  .bus-img{
+   max-width: 400px;
+   align-self: center;
+   &>img{
+    width: 100%;
+    height: auto;
+   }
+   .inner-content{
+   width: 70vw;
+   }
+  }
+  .header-funtion{
+   height: 30vh;
+  }
+  .hero-about {
+    width: 80%;
+    height: auto;
+    margin: auto;
+    z-index:0;
+  }
+  label>span{
+   display: none;
+  }
+  
+  
+ }
+ @media screen and (max-width: 770px) {
+  .mid-card-container{
+    flex-direction: column;
+    
+    align-items: center;
+    gap: 10px;
+    
+  }
+  .footer-bottom-text{
+    font-size: 0.5rem;
+  }
+  h2{
+    text-align: center;
+  }
+  .card-container{
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+ }
+ @media screen and (max-width: 650px) {
+   .header-funtion{
+    height: 31vh;
+   
+   }
+   .footer-top {
+    grid-template-columns: repeat(1,1fr);
+    grid-template-rows: 1fr 4fr 1fr;
+    text-align: center;
+  }
+   h2{
+    text-align: center;
+   }
+   .container-2 {
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    margin: 15rem  0 0 0;
+   }
+   .features-div{
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+   }
+   
+  }
+   @media screen and (max-width: 625px) {
+    .header-funtion{
+      height: 40vh;
+     
+     }
+   }
+  @media screen and (max-width: 500px) {
+    .header-funtion{
+     height: 50vh;
+    }
+    .footer-top-middle {
+      grid-template-columns: repeat(1, 1fr);
+      grid-template-rows: repeat(4, 1fr);
+    }
+    .none{
+      display: none;
+ 
+    }
+    .hero-about {
+      width: 70%;
+      height: 10rem;
+      margin: auto;
+      gap: 0.5rem;
+      z-index:0;
+      padding: 0.5rem;
+      &>h1{
+        font-size: 1rem;
+        font-weight: bold;
+      }
+      &>h3{
+        font-size: 0.65rem;
+      }
+      &>p{
+        display: none;
+      }
+      &>a{
+        width: 50%;
+        padding: 10px;
+        font-size: 0.5rem;
+        
+      }
+    }
+    .container-2 {
+      margin: 5rem  0 0 0;
+     }
+    
+   }
+   @media screen and (max-width: 450px) {
+    
+     .line-two{
+      &>fieldset{
+        height: 0.2rem;
+        &>legend{
+          font-size: 0.5rem;
+        }
+       
+      }
+     }
+    
+   }
+   @media screen and (max-width: 410px) {
+    .container-2 {
+      margin: 10rem  0 0 0;
+     }
+     .mid-card {
+       width: 100%;
+       margin: 10px 0;
+       gap: 0;
+     }
+    
+   }
