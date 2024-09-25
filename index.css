@@ -1364,7 +1364,10 @@ a {
 }
 @media screen and (max-width: 1300px){
   .header-top {
-    height: 37vh;
+    height: 38vh;
+   }
+   .header-funtion{
+    height: 21vh;
    }
 }
 @media screen and (max-width: 1100px) {
