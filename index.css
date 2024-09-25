@@ -221,19 +221,20 @@ body {
 }
 
 .dropdown-content-menu {
-    
     display: none;
-    width: 55vw;
-    height: 100vh;
-    position: absolute; 
-    top: -18px;
-    right: -9.9rem;
+    width: 60%;
+    height: 100vh;  
+    position: fixed; 
+    top: -1px;
+    right: -1rem;
     background-color: #fff;
     z-index: 2;
     
 }
+
 .main-box{
-    display: flex;
+  width: 100%;
+  display: flex;
 }
 .left-box{
     width: 60%;
@@ -314,24 +315,22 @@ body {
 .right-box{
     width: 39%;
     height: 100vh;
-    
-    border: 2px solid #000;
     background-color:rgb(2,12,23) ;
     color: #fff;
     overflow: hidden;
     overflow-y: scroll;
     &>div{
-        width: 250px;
+        width: 80%;
         display: flex;
-        margin-top: 80px;
-        margin-left: 30px;
+        margin: 80px auto ;
+
         flex-direction: column;
         align-items: start;
         padding: 10px;
         &>h1{
             font-size: 18px;
         }
-        &>div{
+        &>.menu-right-box{
             width: 90%;
             display: flex;
             flex-direction: column;
@@ -339,8 +338,8 @@ body {
             margin: 30px 0;
         }
         &>div>img{
-            width: 100%;
-            height: 150px;
+            width: 90%;
+            height:80%;
             border-radius: 10px;
         }
         &>div>p{
@@ -1271,7 +1270,7 @@ a {
 }
 
 .footer-middle{
-  width: 100vw;
+  width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -1327,7 +1326,7 @@ a {
 
 
 .footer-bottom {
-  width: 100vw;
+  width: 100%;
   background-color: #030c16;
   /* border: 1px solid; */
   margin-top: 2.5rem;
@@ -1358,10 +1357,16 @@ a {
 .footer-bottom-text{
   font-size: 0.75rem;
 }
+.logo-2{
+  display: none;
+  position: absolute;
+  top: 20px;
+}
 @media screen and (max-width: 1100px) {
   header>p{
     text-align: center;
   }
+
   .header-item{
     padding: 0 1rem;
   }
@@ -1400,13 +1405,84 @@ a {
   
   
  }
+
  @media screen and (max-width: 770px) {
   .mid-card-container{
     flex-direction: column;
-    
     align-items: center;
     gap: 10px;
     
+  }
+  .main-box{
+    flex-direction: column;
+    &>.left-box{
+      width: 100%;
+      height: 90vh;
+      &>.list-menu{
+        &>.list-1{
+          width: 90%;
+          &>li{
+            padding: 8px;
+          }
+          &>img{
+            width: 100%;
+            height: auto;
+          }
+          p{
+            font-size: 1.5rem;
+          }
+        }
+        &>.list-2{
+          li{
+            font-size: 0.8rem;
+            padding: 5px;
+          }
+        }
+       
+      }
+    }
+    &>.right-box{
+      width: 100%;
+      height: 30vh;
+      padding: 0;
+      &>div{
+        width:90%;
+        height: 10vh;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+        overflow: hidden;
+        overflow-x:scroll ;
+        margin: 0;
+        padding: 10px;
+        &>h1{
+          display: none;
+        }
+        &>.menu-right-box{
+         display: none;
+          align-self: center;
+          &> p {
+            font-size: 0.4rem;
+          }
+          &>a{
+            display: none;
+          }
+        }
+        
+
+      }
+      
+    }
+  }
+  .logo{
+    display: none;
+  }
+  .logo-2{
+    display:inline;
+    position: relative;
+    top: 35px;
+    left: 20px;
   }
   .footer-bottom-text{
     font-size: 0.5rem;
@@ -1424,6 +1500,9 @@ a {
    .header-funtion{
     height: 31vh;
    
+   }
+   .line-one a{
+    display: none;
    }
    .footer-top {
     grid-template-columns: repeat(1,1fr);
@@ -1454,7 +1533,7 @@ a {
    }
   @media screen and (max-width: 500px) {
     .header-funtion{
-     height: 50vh;
+     height: 40vh;
     }
     .footer-top-middle {
       grid-template-columns: repeat(1, 1fr);
@@ -1515,5 +1594,30 @@ a {
        margin: 10px 0;
        gap: 0;
      }
+     .card {
+      width: 100%;
+     }
+   .mid-card-container{
+    margin: 20px;
+    &>.mid-card{
+      gap: 10px;
+    }
+   
+   }
+   .more-flights-container{
+    margin: 0 20px ;
+   }
+   .flying-with-us-container{
+    margin: 0 20px;
+   }
+   .none-2{
+    display: none;
+   }
+   .hero-about>h3{
+    font-size: 0.5rem;
+   }
+   .header-top {
+    height: 42vh;
+   }
     
    }
