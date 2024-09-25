@@ -689,7 +689,7 @@ select {
     
   }
   & > a {
-    width: 60%;
+    width: 70%;
     padding: 14px;
     background-color: rgb(218, 5, 48);
     text-decoration: none;
@@ -1437,10 +1437,12 @@ a {
     height: 48vh;
    }
    .more-2{
-    display: block;
-    background: linear-gradient(to top, rgb(218,5,48) 0%, rgb(236, 5, 51) 80%, rgba(218, 5, 48, 0) 100%);
+    display: flex;
+    background: linear-gradient(to top, rgb(218,5,48) 0%, rgb(210, 9, 49) 50%,  rgb(255, 2, 53) 80%, rgba(218, 5, 48, 0) 100%);
     width: 100vw;
     height: 40vh;
+    justify-content: center;
+    align-items: center;
     position: relative;
     bottom: 2rem;
     z-index: 100;
@@ -1486,10 +1488,7 @@ a {
   label>span{
    display: none;
   }
-  .more-2{
-    display: inline-block;
-    
-  }
+ 
   
  }
 
@@ -1720,19 +1719,16 @@ a {
     }
     .hero-about-2 {
       width: 70%;
-      height: 6rem;
+      
       gap: 0.5rem;
       z-index:0;
-      padding: 0.5rem;
+     
       &>h1{
         font-size: 0.8rem;
         font-weight: bold;
       }
       &>h3{
         font-size: 0.65rem;
-      }
-      &>p{
-        display: none;
       }
       &>a{
         width: 80%;
@@ -1749,7 +1745,7 @@ a {
    @media screen and (max-width: 450px) {
     
     .container-2 {
-        margin: 0.5rem 55px;
+        margin: 0.5rem auto;
         width: 90%;
        }
        .item{
