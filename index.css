@@ -675,7 +675,7 @@ select {
 }
 
 .hero-background {
-  width: 100%;
+  width: 100vw;
   height: 65vh;
   position: relative;
   bottom: 61vh;
@@ -1366,6 +1366,9 @@ a {
   header>p{
     text-align: center;
   }
+  .header-top {
+    height: 48vh;
+   }
 
   .header-item{
     padding: 0 1rem;
@@ -1496,11 +1499,17 @@ a {
     gap: 10px;
   }
  }
+ @media screen and (max-width: 680px){
+  .header-top {
+    height: 60vh;
+   }
+ }
  @media screen and (max-width: 650px) {
    .header-funtion{
     height: 31vh;
    
    }
+   
    .line-one a{
     display: none;
    }
@@ -1529,6 +1538,9 @@ a {
     .header-funtion{
       height: 40vh;
      
+     }
+     .header-top {
+      height: 70vh;
      }
    }
   @media screen and (max-width: 500px) {
