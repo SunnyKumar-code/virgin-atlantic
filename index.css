@@ -29,8 +29,8 @@ body {
   align-items: center;
 }
 .logo {
-  width: 200px;
-  height: 120%;
+  width: 220px;
+  height: 110%;
   object-fit: cover;
   & > img {
     width: 100%;
@@ -689,10 +689,8 @@ select {
   max-width: 1200px;
   display: flex;
   justify-content: center;
-  align-items: center;
-  margin: auto;
   flex-wrap: wrap;
-  margin: 5rem auto;
+  margin: 2rem auto;
 }
 .item {
   width: 280px;
@@ -1124,9 +1122,9 @@ select {
   margin: 0 auto;
   margin-top: 2rem;
   padding: 5rem 0;
- display: flex;
- flex-wrap: wrap;
- justify-content: space-between;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
   gap: 1rem;
 }
 
@@ -1137,7 +1135,7 @@ select {
   justify-content: center;
   align-items: center;
   text-align: center;
-  gap: 1rem;
+  gap: 1.2rem;
 }
 
 .features-content h3 {
@@ -1198,6 +1196,7 @@ footer {
 
 .footer-top-middle {
   padding: 2rem 0.5rem;
+  gap:50px;
   width: 100%;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -1594,6 +1593,15 @@ a {
    }
    @media screen and (max-width: 450px) {
     
+    .container-2 {
+        margin: 0.5rem 55px;
+        width: 90%;
+       }
+       .item{
+        margin-bottom: 50px;
+        width: 100%;
+       }
+
      .line-two{
       &>fieldset{
         height: 0.2rem;
@@ -1603,11 +1611,15 @@ a {
        
       }
      }
+     .features-div{
+       gap: 50px;
+     }
     
    }
    @media screen and (max-width: 410px) {
     .container-2 {
-      margin: 10rem  0 0 0;
+      margin: 2rem auto;
+      width: 90%;
      }
      .mid-card {
        width: 100%;
@@ -1639,5 +1651,6 @@ a {
    .header-top {
     height: 42vh;
    }
-    
+
+   
    }
