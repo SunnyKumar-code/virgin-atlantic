@@ -1,0 +1,149 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap");
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: #030c16;
+    font-family: "Montserrat", sans-serif;
+}
+
+body{
+   background-color: #ffff;
+}
+
+.top-bar{
+    max-width: 1200px;
+    margin: auto;
+    padding-top: 15px;
+}
+
+.header-cont{
+    display: flex;
+    align-items: center;
+    gap: 50px;
+
+    &>img{
+        width: 220px;
+        height: 110%;
+        object-fit: cover;
+    }
+
+    & > ul{
+        display: flex;
+        gap: 40px;
+        list-style: none;
+    }
+    & > ul > li{
+        padding: 15px;
+    }
+    & >ul>li:hover{
+        background-color: #ebeff1;
+        
+    }
+}
+.bg-img img{
+    width: 100vw;
+}
+
+main{
+    max-width: 1200px;
+
+    margin: 40px auto;
+}
+
+.sep{
+    margin: 20px 0;
+    border: 0.2px solid rgb(188, 185, 185);
+}
+
+.footer-content{
+    display: flex;
+    gap: 80px;
+    max-width: 1200px;
+    margin: auto;
+    h3{
+      margin: 20px 0;
+    }
+    ul{
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+    
+    }
+}
+
+.foot-list li>a:hover {
+    color: red;
+}
+
+
+.lower-footer{
+      
+    max-width: 1200px;
+    margin: auto;
+    margin-top: 40px;
+}
+.follow{
+ display: flex; 
+ flex-wrap: wrap;
+ gap: 80px;
+    & > ul{
+        display: flex;
+        list-style: none;
+        gap: 20px;
+    }
+    
+
+}
+.icon-cont{
+    display: flex;
+    justify-content: center;
+    
+}
+.icon{
+    width: 60%;
+    margin-top: 8px;
+    cursor: pointer;
+    
+}
+
+.circular-container {
+    border-radius: 50%;
+    border: 1px solid red;
+    width: 50px;
+    height: 50px;
+}
+
+.app{
+    max-width: 1200px;
+
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+
+    & > img{
+        width: 35%;
+        cursor: pointer;
+    }
+}
+
+
+.copyright{
+    margin-top: 20px;
+    width: 100vw;
+    height: 110px;
+    background-color: #ebeff1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+}
+
+@media screen and (max-width:730px) {
+    .header-cont ul{
+        display: none;
+    }
+}
