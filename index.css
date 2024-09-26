@@ -907,6 +907,23 @@ select {
     }
 }
 
+.feedback-button {
+  position: fixed;
+  right: 36px;
+  top: 50%;
+  background-color: #d30202;
+  color: white;
+  padding: 10px 33px;
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+  font-weight: 200;
+  transform: rotate(90deg);
+  transform-origin: right bottom;
+  cursor: pointer;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+  border-radius: 3px;
+}
 
 
 .more-flights{
@@ -1681,6 +1698,9 @@ a {
       width: 80%;
       
     }
+   }
+   .feedback-button{
+    display: none;
    }
  }
  @media screen and (max-width: 680px){
