@@ -139,10 +139,19 @@ section h3{
     font-weight: 400;
     padding-left: 5px;
 }
-
+.sp1{
+    /* font-weight: bolder; */
+    color: purple;
+    cursor: pointer;
+}
+.sp2{
+    color: black;
+    font-weight: 600;
+    margin: 0 10px;
+}
 .hero-section{
     width: 100%;
-    background-image: url(../Sachin-Assets/Flywith-Hero.jpg);
+    background-image: url(../Sachin-Assets/hero-image-find-out-more.jpg);
     height: 350px;
     background-size: cover;
     background-position: center;
@@ -162,20 +171,28 @@ section h3{
     justify-content: center;
     align-items: start;
     /* border: 2px solid ; */
+    gap: 2rem;
 }
 
 .hero-content h2{
     color: white;
     font-size: 56px;
     font-weight: 100;
-    margin: 1rem 0;
+    /* margin: 1rem 0; */
+}
+
+.hero-content p{
+    color: white;
+    font-size: 1.2rem;
+    font-weight: 500;
+    margin: 0.5rem 0;
 }
 
 .hero-content button{
-    margin: 1rem 0;
+    /* margin: 1rem 0; */
     width: fit-content;
-    padding: 0.5rem;
-    font-size: 1.2rem;
+    padding: 0.5rem 2rem;
+    font-size: 1.1rem;
     font-weight: 300;   
     background: rgb(237,13,51);
     background: linear-gradient(140deg, rgb(218, 0, 36) 0%, rgb(95, 2, 58) 95%); 
@@ -186,11 +203,21 @@ section h3{
     cursor: pointer;
 }
 
+
 .hero-content button:hover{
     background: rgb(157, 5, 30);
     background: linear-gradient(140deg, rgb(131, 1, 22) 0%, rgb(93, 1, 56) 95%);
     
 }
+
+.hero-content-div p{
+    display: inline;
+    font-size: 0.9rem;
+    margin: 0 0.5rem;
+    text-wrap: wrap;
+    cursor: pointer;
+}
+
 
 .middle-section{
     max-width: 1200px;
@@ -443,7 +470,10 @@ footer{
         gap: 0;
     }
     .hero-content h2{
-        font-size: 4rem;
+        font-size: 3rem;
     }
-
+    .hero-content-div p{
+        margin: 1rem 0;
+        display: block;
+    }
 }
