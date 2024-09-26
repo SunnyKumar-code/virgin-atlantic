@@ -1,0 +1,332 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap");
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100vw;
+    height: 100%;
+    width: 100vw;
+    background-color: #ffffff;
+    color: #030c16;
+    font-family: "Montserrat", sans-serif;
+}
+
+.nav-section{
+    width: 100vw;
+    height: 10vh;
+    border-bottom: 1px solid rgb(218, 217, 217);
+    position: fixed;
+    z-index: 10;
+    background-color: #ffffff;
+}
+
+.nav-bar{
+    max-width: 1200px;
+    height: 100%;
+    margin: 0 auto;
+    display: flex;
+    /* flex-direction: column; */
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-logo{
+    width: 10%;
+    height: 100%;
+    height: 100%;
+    /* border: 1px solid; */
+}
+
+.nav-logo img{
+    width: 150px ;
+    
+}
+
+.nav-element{
+    width: 70%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.nav-element a{
+    /* box-sizing: border-box; */
+    text-decoration: none;
+    display: flex;
+   
+    align-items: center;
+    padding: 0 10px;
+    text-align: center;
+    align-self: center;
+    height: 100%;
+    color: rgb(97,18,107);
+    /* border: 1px solid; */
+}
+
+.nav-element a:hover{
+    border-bottom: 2px solid red;
+}
+
+.nav-left-element{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* gap: 1rem; */
+    font-size: 0.9rem;
+    font-weight: 700;
+
+}
+
+.nav-right-element{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav-right-element{
+    font-size: 0.7rem;
+
+}
+
+.nav-account{
+    border-left: 1px solid rgb(224, 224, 224);
+    width: 15%;
+    height: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav-account button{
+    width: 100px;
+    height: 30px;
+    border: none;
+    border-radius: 3px;
+    background: rgb(237,13,51);
+    background: linear-gradient(140deg, rgba(237,13,51,1) 0%, rgb(198, 0, 119) 95%); 
+    color: white;
+    font-weight: 600; 
+    font-size: 0.8rem;
+}
+
+.nav-account button:hover{
+    background: rgb(157, 5, 30);
+    background: linear-gradient(140deg, rgb(195, 6, 37) 0%, rgba(142,0,85,1) 95%);
+}
+
+/* main section */
+.container {
+    width: 100%;
+    margin: 0 auto;
+    padding: 20px;
+    position: relative;
+    top: 100px;
+    background-color: rgb(255, 255, 255);
+}
+
+h1 {
+    width: 80%;
+    margin: 0 auto;
+    color: #da0530;
+    font-size: 3rem;
+    font-weight: 100;
+}
+
+.flight-booking {
+    box-shadow: 0 0 5px rgba(32, 32, 32, 0.733);
+    width: 80%;
+    margin: auto;
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.options select {
+    width: 100%;
+    height: 50px;
+    font-size: 20px;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+.flight input[type="text"], .flight input[type="date"] {
+    width: calc(33% - 10px);
+    padding: 20px;
+    margint: 5px;
+}
+
+.flight input[type="checkbox"] {
+    margin-top: 15px;
+    display: block;
+}
+
+.button {
+    background-color: #da0530;
+    color: white;
+    border: none;
+    margin: 20px;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.button:hover {
+    background-color: #c0042d;
+}
+.additional-options{
+    width: 80%;
+    margin: 20px auto;
+}
+
+@media (max-width: 600px) {
+    .flight input[type="text"], .flight input[type="date"] {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+    .options select, button {
+        width: 100%;
+    }
+}
+/* footer section */
+
+footer{
+    width: 100vw;
+    height: 95vh;
+    background-color:#F2F2F2 ;
+    padding: 2rem 0;
+    position: relative;
+    top: 100px;
+}
+
+.footer-content{
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 1rem 0;
+
+}
+
+.footer-top{
+    width: 80%;
+    display: flex;
+    justify-content: start;
+    align-items: start;
+    flex-wrap: wrap;
+    border-bottom: 1px solid #c6c6c6;
+    margin: 1rem 0;
+
+}
+
+.footer-top-card{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    flex-wrap: wrap;
+    padding: 1rem 2.5rem ;
+    gap: 1rem;
+    margin: 1rem 0;
+
+    
+}
+
+.footer-top-card h3{
+    font-size: 1rem;
+    font-weight: bolder;
+
+}
+
+.footer-top-card a{
+    text-decoration: none;
+    font-size: 0.8rem;
+    color: rgb(97,18,107);
+    font-weight: 500;
+}
+
+.footer-middle{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 3rem 0;
+    color: #605f5f;
+    font-size: 0.7rem;
+
+}
+
+.fmt{
+    margin-bottom: 1rem 0;
+}
+
+.fmm{
+    margin: 0.5rem 0;
+}
+.fmb{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-bottom: 1rem;
+    
+}
+
+.fmb a{
+    text-decoration: none;
+    color: rgb(97,18,107);
+    font-weight: 500;
+}
+
+.footer-bottom{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 1rem 0;
+    flex-wrap: wrap;
+}
+
+.footer-bottom p{
+    font-size: 0.7rem;
+    color: #605f5f;
+    flex-wrap: wrap;
+}
+
+.footer-social-media{
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+    margin: 1.5rem 2rem;
+}
+
+.footer-social-media img{
+    width: 30px;
+}
+@media screen and (max-width:770px){
+    .nav-element{
+        display: none;
+    }
+}
+
+@media screen and (max-width:500px){
+    .footer-top{
+        flex-direction: column;
+        gap: 0;
+    }
+}
