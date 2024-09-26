@@ -161,7 +161,7 @@ h1 {
 .flight input[type="text"], .flight input[type="date"] {
     width: calc(33% - 10px);
     padding: 20px;
-    margint: 5px;
+    margin: 5px;
 }
 
 .flight input[type="checkbox"] {

@@ -138,7 +138,7 @@ body{
         padding: 5px 3px;
         margin: 5px 10px;
         border-radius: 5px;
-        border: 1px solid #000000cf;
+        box-shadow: 0 0 5px rgba(0, 0, 0, 0.404);
         &>div{
             padding: 5px;
             &>h3{
@@ -149,26 +149,21 @@ body{
             }
          
         }
-        &>button{
-            width: 100%;
-            height: 100%;
-            font-size: 1rem;
-            padding: 20px;
-            background-color: rgb(218, 5, 48);
-            color: #ffffff;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-            transition: 0.5s ease-in-out;
-        }
-        &>button:hover{
-            background-color: #ac0c0c;
-        }
+        
 
     }
     .btn{
-        border: none;
-        padding: none;
+        text-align: center;
+        font-size: 1rem;
+        padding: 20px ;
+        background-color: rgb(218, 5, 48);
+        color: #ffffff;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: 0.5s ease-in-out;
+    }
+    .btn:hover{
+        background-color: #ac0c0c;
     }
 
 }
