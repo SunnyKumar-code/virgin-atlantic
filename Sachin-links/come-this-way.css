@@ -139,11 +139,20 @@ section h3{
     font-weight: 400;
     padding-left: 5px;
 }
+.sp1{
+    /* font-weight: bolder; */
+    color: purple;
+    cursor: pointer;
+}
+.sp2{
+    color: black;
+    font-weight: 600;
+    margin: 0 10px;
+}
 
 .hero-section{
     width: 100%;
-    background-image: url(../Sachin-Assets/Flywith-Hero.jpg);
-    height: 350px;
+    background-color: #F5F6F8;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -154,8 +163,8 @@ section h3{
 
 .hero-content{
     max-width: 1200px;
-    height: 100%;
     margin: 0 auto;
+    padding: 5rem 0;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
@@ -165,120 +174,84 @@ section h3{
 }
 
 .hero-content h2{
-    color: white;
+    color: rgb(45, 45, 45);
+    font-weight: 200;
     font-size: 56px;
     font-weight: 100;
     margin: 1rem 0;
 }
 
-.hero-content button{
-    margin: 1rem 0;
-    width: fit-content;
-    padding: 0.5rem;
+.hero-content p{
+    font-weight: 500;
     font-size: 1.2rem;
-    font-weight: 300;   
-    background: rgb(237,13,51);
-    background: linear-gradient(140deg, rgb(218, 0, 36) 0%, rgb(95, 2, 58) 95%); 
-    color: white;
-    border: none;
-    border-radius: 5px;
-    color: white;
-    cursor: pointer;
+    margin: 1rem 0;
+    line-height: 2rem;
 }
 
-.hero-content button:hover{
-    background: rgb(157, 5, 30);
-    background: linear-gradient(140deg, rgb(131, 1, 22) 0%, rgb(93, 1, 56) 95%);
-    
+.hero-content ul{
+    padding-left: 2rem;
+    font-weight: 500;
+    font-size: 1.2rem;
+    margin: 1rem 0;
+    line-height: 2rem;
+    /* border: 1px solid black; */
 }
 
-.middle-section{
+.card-content{
     max-width: 1200px;
-    /* height: 50vh; */
-    margin:2rem auto;
-    padding-bottom: 1rem;
+    margin: 0rem auto;
+    margin-top: 5rem;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+}
+.left-card,.right-card{
+    width: 48%;
+    display: flex;
+    border: 1px solid rgb(229, 229, 229);
+    border-radius: 3px;
+    padding: 5rem 0;
+}
+.icon-div{
+    width: 30%;
+    /* padding-top: 5rem; */
     display: flex;
     justify-content: center;
-    align-items: center;
-    /* flex-wrap: wrap; */
-    border-bottom: 1px solid rgb(201, 201, 202);
-    
+    align-items: start;
 }
-
-
-.mld{
-    width: 50%;
+.icon-info{
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: start;
-    flex-wrap: wrap;
-      
-    
-}
-.mld-content{
-    width: 80%;
-    display: flex;
-    align-items: start;
-    justify-content: center;
-    flex-direction: column;    
-}
-.mld-content h2{
-    font-size: 2.5rem;
-    font-weight: 300;
-    margin-bottom: 1rem;
-    text-wrap: wrap;
-
+    gap: 2rem;
 }
 
-.mld-content p{
+.icon-info h2{
+    padding: 0.5rem;
     font-size: 1.2rem;
-    margin: 1rem 0;
-    text-wrap: wrap;
-
 }
 
-.mld-content button{
-    background: none;
-    border: none;
-    font-size: 1.4rem;
-    font-weight: 200;
-    margin: 1rem 0;
-    color: rgb(121, 9, 103);
-}
-
-.mld-content button i{
-    color: rgb(218, 0, 36);
-}
-.mrd{
-    width: 50%;
-
-}
-.mrd img{
+.icon-info p{
+    font-weight: 500;
     width: 90%;
 }
 
-
-.lower-middle{
-    max-width: 1200px;
-    margin: 5rem auto;
-    margin-bottom: 0;
-    text-wrap: wrap; 
-    
+.icon-info button{
+    margin:0  0.5rem;
+    max-width: 20rem;
+    padding: 15px;
+    font-size: 0.9rem;
+    border: 1px solid #DA0530;
+    border-radius: 5px;
+    background-color: #ffffff;
+    font-weight: 500;
+    color: #DA0530;
+    line-height: 1.2rem;
+    cursor: pointer;
 }
 
-.lower-middle h2 {
-    font-size: 3rem;
-    font-weight: 200;
-    margin: 2rem 0;
-    /* color: #605f5f; */
-}
-
-.lower-middle p{
-    font-size: 1.1rem;
-    font-weight: 400;
-    color: #0a121b;
-
+.icon-info button:hover{
+    background-color: #F7EBEA;
 }
 
 /* footer section */
@@ -434,6 +407,18 @@ footer{
         align-items: center;
         text-align: center;
         padding: 2rem ;
+    }
+    .card-content{
+        /* width: 100%; */
+        flex-direction: column;
+        align-items: center;
+        /* margin: 0.5rem; */
+
+        
+    }
+    .left-card,.right-card{
+        width: 90%;
+        margin-bottom: 1rem;
     }
 }
 

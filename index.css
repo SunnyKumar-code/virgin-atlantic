@@ -1282,15 +1282,21 @@ footer {
 
 .footer-top-left {
   margin: 2rem 0;
+  /* padding: 0 1rem ; */
   
 }
 
 .footer-top-left h3 {
-  padding: 0.5rem 0;
+  padding: 0.5rem;
   font-weight: 300;
   font-size: 1.5rem;
   transition: 0.5s ease;
-  border-radius: 1px;
+  border-radius: 2px;
+  cursor: pointer;
+}
+
+.footer-top-left h3>a{
+  color: white;
 }
 
 .footer-top-left h3:hover {

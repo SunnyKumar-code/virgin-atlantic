@@ -139,14 +139,27 @@ section h3{
     font-weight: 400;
     padding-left: 5px;
 }
+.sp1{
+    /* font-weight: bolder; */
+    color: purple;
+    cursor: pointer;
 
+}
+.sp2{
+    color: black;
+    font-weight: 600;
+    margin: 0 10px;
+    cursor: text;
+}
 .hero-section{
-    width: 100%;
-    background-image: url(../Sachin-Assets/Flywith-Hero.jpg);
-    height: 350px;
-    background-size: cover;
+    width: 100%; 
+    /* background-color: #F5F6F8;    */
+    height: 400px;  
+    background-image: url(../Sachin-Assets/london\ hero.jpg);  
     background-position: center;
     background-repeat: no-repeat;
+    background-size: cover;
+
     margin-top: 1rem ;
     
 
@@ -154,6 +167,7 @@ section h3{
 
 .hero-content{
     max-width: 1200px;
+    /* border: 1px solid green; */
     height: 100%;
     margin: 0 auto;
     display: flex;
@@ -161,21 +175,38 @@ section h3{
     flex-wrap: wrap;
     justify-content: center;
     align-items: start;
-    /* border: 2px solid ; */
+    padding: 5rem 0;
+    
 }
 
+.hero-content div{
+    width: 50%;
+    padding: 1rem;
+    line-height: 5rem;
+    
+}
+
+
 .hero-content h2{
-    color: white;
+    color: #fcfafa;
     font-size: 56px;
-    font-weight: 100;
+    font-weight: 500;
     margin: 1rem 0;
+}
+
+.hero-content p{
+    color: rgb(250, 249, 249);
+    font-size: 1.3rem;
+    font-weight: 600;
+    margin: 1rem 0;
+    line-height: 2rem;
 }
 
 .hero-content button{
     margin: 1rem 0;
     width: fit-content;
-    padding: 0.5rem;
-    font-size: 1.2rem;
+    padding: 0.5rem 2rem;
+    font-size: 1.1rem;
     font-weight: 300;   
     background: rgb(237,13,51);
     background: linear-gradient(140deg, rgb(218, 0, 36) 0%, rgb(95, 2, 58) 95%); 
@@ -186,100 +217,96 @@ section h3{
     cursor: pointer;
 }
 
+
 .hero-content button:hover{
     background: rgb(157, 5, 30);
     background: linear-gradient(140deg, rgb(131, 1, 22) 0%, rgb(93, 1, 56) 95%);
     
 }
 
-.middle-section{
+.hero-content div span{
+    display: inline;
+    font-size: 1rem;
+    margin: 0 0.5rem;
+    text-wrap: wrap;
+    cursor: pointer;
+
+}
+
+.hero-content div span i{
+    color: red;
+}
+
+.middle-content{
     max-width: 1200px;
-    /* height: 50vh; */
-    margin:2rem auto;
-    padding-bottom: 1rem;
+    margin: 0 auto;
+    margin-top: 5rem;
     display: flex;
-    justify-content: center;
-    align-items: center;
     /* flex-wrap: wrap; */
-    border-bottom: 1px solid rgb(201, 201, 202);
+    justify-content: space-between;
+    align-items: center;
     
+
 }
 
+.left-middle-content{
+    width: 58%;    
+}
 
-.mld{
-    width: 50%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: start;
-    flex-wrap: wrap;
-      
-    
-}
-.mld-content{
-    width: 80%;
-    display: flex;
-    align-items: start;
-    justify-content: center;
-    flex-direction: column;    
-}
-.mld-content h2{
+.left-middle-content h2{
     font-size: 2.5rem;
-    font-weight: 300;
-    margin-bottom: 1rem;
-    text-wrap: wrap;
-
-}
-
-.mld-content p{
-    font-size: 1.2rem;
-    margin: 1rem 0;
-    text-wrap: wrap;
-
-}
-
-.mld-content button{
-    background: none;
-    border: none;
-    font-size: 1.4rem;
-    font-weight: 200;
-    margin: 1rem 0;
-    color: rgb(121, 9, 103);
-}
-
-.mld-content button i{
-    color: rgb(218, 0, 36);
-}
-.mrd{
-    width: 50%;
-
-}
-.mrd img{
-    width: 90%;
-}
-
-
-.lower-middle{
-    max-width: 1200px;
-    margin: 5rem auto;
-    margin-bottom: 0;
-    text-wrap: wrap; 
-    
-}
-
-.lower-middle h2 {
-    font-size: 3rem;
     font-weight: 200;
     margin: 2rem 0;
-    /* color: #605f5f; */
 }
 
-.lower-middle p{
+.left-middle-content p{
+    line-height: 2rem;
     font-size: 1.1rem;
-    font-weight: 400;
-    color: #0a121b;
+    font-weight: 420;
+    margin: 2rem 0;
+}
+.right-middle-content{
+    /* padding: 1rem 0; */
+    width: 40%;
+}
+.right-middle-content img{
+    padding: 1rem;
+    width: 80%
+}
+
+.middle-container{
+    max-width: 1200px;
+    /* border-top: 1px solid #cdced0; */
+    margin:0 auto;
+    margin-top: 2rem;
+    padding: 2rem;
+    line-height: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+}
+
+.condition-statement{
+    width: 70%;
+    padding: 2rem;
+    border-top: 1px solid rgb(211, 211, 211);
+}
+
+.download-card{
+   width: 70%;
+   padding: 2rem;
+   background-color: #F5F6F8;
+   border-radius: 5px;
 
 }
+.download-card p{    
+    display: inline;
+    padding: 1rem;
+    font-weight: 600;
+    color: purple;
+
+}
+
 
 /* footer section */
 
@@ -419,21 +446,28 @@ footer{
         padding: 0 2rem;
     }
 
-    .middle-section{
+    .middle-content{
         flex-direction: column;
+        justify-content: start;
+        align-items: center;
         margin: 5rem;
         /* border: 1px solid; */
         margin: 1rem 0;
     }
-
-    .mld-content{
+    .right-middle-content{
+        /* padding: 1rem 0; */
         width: 100%;
-    }
-
-    .lower-middle{
+        display: flex;
         align-items: center;
-        text-align: center;
-        padding: 2rem ;
+        justify-content: center;
+    }
+    .hero-content div{
+        width: 90%;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
     }
 }
 
@@ -443,7 +477,10 @@ footer{
         gap: 0;
     }
     .hero-content h2{
-        font-size: 4rem;
+        font-size: 3rem;
     }
-
+    .hero-content-div p{
+        margin: 1rem 0;
+        display: block;
+    }
 }
