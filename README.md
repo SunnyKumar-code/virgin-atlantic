@@ -3,6 +3,9 @@
 
 ## Description
 This project is a clone of the Virgin Atlantic website, designed using only HTML and CSS. The goal was to replicate the website's structure and design as closely as possible without using JavaScript. The project was developed as a team effort, showcasing different sections built by individual team members.
+<br>
+<br>
+The original website has changed a bit on the last day so we are not adding the changes as of now
 
 ## Team Work
 - **Sunny Kumar** - Project Head, responsible for the creation and design of the **header** section.
