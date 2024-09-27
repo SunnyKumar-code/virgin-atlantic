@@ -10,10 +10,9 @@ This project is a clone of the Virgin Atlantic website, designed using only HTML
 ### Header Screenshots:
 
 ![Header Screenshot](./Assets/header-screenshot-part1.jpg)
-- **Header Section (Part 1):** This screenshot showcases the initial design of the header, including the logo, navigation bar, and main structure. The focus is on clean and professional alignment.
+- **Header Section:** This screenshot showcases the initial design of the header, including the logo, navigation bar, and main structure. The focus is on clean and professional alignment.
 
-![Header Screenshot](./Assets/header-screenshot-part2.jpg)
-- **Header Section (Part 2):** A continuation of the header design, showing the fully expanded navigation bar with more detailed options, as well as the search functionality.
+- ![Screenshot](./Assets/header-screenshot-part2.jpg)
 
 ![Responsive Header Screenshot](./Assets/header-part3.png)
 - **Responsive Header:** This image highlights how the header dynamically adapts to different screen sizes, ensuring a seamless experience across devices like tablets and smartphones.
