@@ -133,7 +133,7 @@ section{
 
 section h3{
     max-width: 1200px;
-    margin: 0 auto;
+    margin: 0rem auto;
     color: rgb(236, 0, 39);
     font-size: 0.9rem;
     font-weight: 400;
@@ -143,19 +143,18 @@ section h3{
     /* font-weight: bolder; */
     color: purple;
     cursor: pointer;
+
 }
 .sp2{
     color: black;
     font-weight: 600;
     margin: 0 10px;
+    cursor: text;
 }
 .hero-section{
-    width: 100%;
-    background-image: url(../Sachin-Assets/hero-image-find-out-more.jpg);
-    height: 350px;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
+    width: 100%; 
+    background-color: #F5F6F8;   
+    height: 400px;    
     margin-top: 1rem ;
     
 
@@ -174,8 +173,10 @@ section h3{
     gap: 2rem;
 }
 
+
+
 .hero-content h2{
-    color: white;
+    color: #000000;
     font-size: 56px;
     font-weight: 100;
     /* margin: 1rem 0; */
@@ -184,8 +185,9 @@ section h3{
 .hero-content p{
     color: white;
     font-size: 1.2rem;
-    font-weight: 500;
+    font-weight: 400;
     margin: 0.5rem 0;
+    line-height: 2rem;
 }
 
 .hero-content button{
@@ -216,6 +218,76 @@ section h3{
     margin: 0 0.5rem;
     text-wrap: wrap;
     cursor: pointer;
+}
+
+.middle-content{
+    max-width: 1200px;
+    margin: 0 auto;
+    margin-top: 5rem;
+    display: flex;
+    /* flex-wrap: wrap; */
+    justify-content: space-between;
+    align-items: center;
+    
+
+}
+
+.left-middle-content{
+    width: 58%;    
+}
+
+.left-middle-content h2{
+    font-size: 2.5rem;
+    font-weight: 200;
+    margin: 2rem 0;
+}
+
+.left-middle-content p{
+    line-height: 2rem;
+    font-size: 1.1rem;
+    font-weight: 420;
+    margin: 2rem 0;
+}
+.right-middle-content{
+    /* padding: 1rem 0; */
+    width: 40%;
+}
+.right-middle-content img{
+    padding: 1rem;
+    width: 80%
+}
+
+.middle-container{
+    max-width: 1200px;
+    /* border-top: 1px solid #cdced0; */
+    margin:0 auto;
+    margin-top: 2rem;
+    padding: 2rem;
+    line-height: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+}
+
+.condition-statement{
+    width: 70%;
+    padding: 2rem;
+    border-top: 1px solid rgb(211, 211, 211);
+}
+
+.download-card{
+   width: 70%;
+   padding: 2rem;
+   background-color: #F5F6F8;
+   border-radius: 5px;
+
+}
+.download-card p{    
+    display: inline;
+    padding: 1rem;
+    font-weight: 600;
+    color: purple;
+
 }
 
 
@@ -357,22 +429,22 @@ footer{
         padding: 0 2rem;
     }
 
-    .middle-section{
+    .middle-content{
         flex-direction: column;
+        justify-content: start;
+        align-items: center;
         margin: 5rem;
         /* border: 1px solid; */
         margin: 1rem 0;
     }
-
-    .mld-content{
+    .right-middle-content{
+        /* padding: 1rem 0; */
         width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
 
-    .lower-middle{
-        align-items: center;
-        text-align: center;
-        padding: 2rem ;
-    }
 }
 
 @media screen and (max-width:500px){

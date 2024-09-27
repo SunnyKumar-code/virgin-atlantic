@@ -143,15 +143,17 @@ section h3{
     /* font-weight: bolder; */
     color: purple;
     cursor: pointer;
+
 }
 .sp2{
     color: black;
     font-weight: 600;
     margin: 0 10px;
+    cursor: text;
 }
 .hero-section{
     width: 100%;
-    background-image: url(../Sachin-Assets/hero-image-find-out-more.jpg);
+    background-image: url(../Sachin-Assets/SAF\ flight_landingpage_1500x640\ \(1\).jpg);
     height: 350px;
     background-size: cover;
     background-position: center;
@@ -174,18 +176,21 @@ section h3{
     gap: 2rem;
 }
 
+
+
 .hero-content h2{
     color: white;
     font-size: 56px;
-    font-weight: 100;
+    font-weight: 200;
     /* margin: 1rem 0; */
 }
 
 .hero-content p{
     color: white;
     font-size: 1.2rem;
-    font-weight: 500;
+    font-weight: 400;
     margin: 0.5rem 0;
+    line-height: 2rem;
 }
 
 .hero-content button{
@@ -218,6 +223,69 @@ section h3{
     cursor: pointer;
 }
 
+.middle-content{
+    max-width: 1200px;
+    margin: 0 auto;
+    margin-top: 5rem;
+    display: flex;
+    /* flex-wrap: wrap; */
+    justify-content: space-between;
+    align-items: center;
+    
+
+}
+
+.left-middle-content{
+    width: 58%;    
+}
+
+.left-middle-content h2{
+    font-size: 2.5rem;
+    font-weight: 200;
+    margin: 2rem 0;
+}
+
+.left-middle-content p{
+    line-height: 2rem;
+    font-size: 1.1rem;
+    font-weight: 420;
+    margin: 2rem 0;
+}
+.right-middle-content{
+    /* padding: 1rem 0; */
+    width: 40%;
+}
+.right-middle-content img{
+    padding: 1rem;
+    width: 80%
+}
+
+.flight100{
+    max-width: 1100px;
+    margin: 5rem auto;
+    padding: 5rem 2rem;
+    background-color: #F2F2F2;
+    font-size: 1.1rem;
+    font-weight: 410;
+    color: #222222;
+    line-height: 2rem;
+}
+.flight100 span{
+    font-weight: bold;
+}
+.flight100 h1{
+    margin-bottom: 2.5rem;
+    color: #222222;
+    font-size: 2.5rem;
+    font-weight: 500;
+}
+
+.click-text{
+    color: purple;
+}
+.flight100 br{
+    margin: 1rem 0;
+}
 
 /* footer section */
 
@@ -357,22 +425,22 @@ footer{
         padding: 0 2rem;
     }
 
-    .middle-section{
+    .middle-content{
         flex-direction: column;
+        justify-content: start;
+        align-items: center;
         margin: 5rem;
         /* border: 1px solid; */
         margin: 1rem 0;
     }
-
-    .mld-content{
+    .right-middle-content{
+        /* padding: 1rem 0; */
         width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
 
-    .lower-middle{
-        align-items: center;
-        text-align: center;
-        padding: 2rem ;
-    }
 }
 
 @media screen and (max-width:500px){

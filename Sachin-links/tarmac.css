@@ -143,19 +143,24 @@ section h3{
     /* font-weight: bolder; */
     color: purple;
     cursor: pointer;
+
 }
 .sp2{
     color: black;
     font-weight: 600;
     margin: 0 10px;
+    cursor: text;
 }
 .hero-section{
-    width: 100%;
-    background-image: url(../Sachin-Assets/hero-image-find-out-more.jpg);
-    height: 350px;
-    background-size: cover;
+    width: 100%; 
+    
+    background-color: #F5F6F8;   
+    /* height: 400px;  
+    background-image: url(../Sachin-Assets/A330Neo_exterior_air01\ \(2\)\ \(1\)\ \(1\).jpg);  
     background-position: center;
     background-repeat: no-repeat;
+    background-size: cover; */
+
     margin-top: 1rem ;
     
 
@@ -163,6 +168,7 @@ section h3{
 
 .hero-content{
     max-width: 1200px;
+    /* border: 1px solid green; */
     height: 100%;
     margin: 0 auto;
     display: flex;
@@ -170,26 +176,38 @@ section h3{
     flex-wrap: wrap;
     justify-content: center;
     align-items: start;
-    /* border: 2px solid ; */
-    gap: 2rem;
+    padding: 5rem 0;
+    
 }
+
+.hero-content div{
+    width: 60%;
+    padding: 1rem;
+    line-height: 5rem;
+    
+}
+
 
 .hero-content h2{
-    color: white;
+    color: #252424;
     font-size: 56px;
     font-weight: 100;
-    /* margin: 1rem 0; */
+    margin-bottom: 2rem ;
 }
+
 
 .hero-content p{
-    color: white;
-    font-size: 1.2rem;
-    font-weight: 500;
-    margin: 0.5rem 0;
+    color: rgb(40, 39, 39);
+    font-size: 1.3rem;
+    font-weight: 700;
+    margin: 1rem 0;
+    line-height: 2rem;
 }
 
+
+
 .hero-content button{
-    /* margin: 1rem 0; */
+    margin: 1rem 0;
     width: fit-content;
     padding: 0.5rem 2rem;
     font-size: 1.1rem;
@@ -210,12 +228,111 @@ section h3{
     
 }
 
-.hero-content-div p{
+.hero-content div span{
     display: inline;
-    font-size: 0.9rem;
+    font-size: 1rem;
     margin: 0 0.5rem;
     text-wrap: wrap;
     cursor: pointer;
+
+}
+
+.hero-content div span i{
+    color: red;
+}
+
+.pragraph-div{
+    max-width: 1200px;
+    margin: 5rem auto;
+    font-size: 1.1rem;
+    font-weight: 400;
+    line-height: rem;
+    padding: 1rem;
+
+}
+.pragraph-div p{
+    margin: 1.5rem 0;
+    font-weight: 500;
+}
+.pragraph-div span{
+    color: red;
+    cursor: pointer;
+    font-weight: bolder;
+}
+
+.middle-content{
+    max-width: 1200px;
+    margin: 0 auto;
+    margin-top: 5rem;
+    display: flex;
+    /* flex-wrap: wrap; */
+    justify-content: space-between;
+    align-items: center;
+    
+
+}
+
+.left-middle-content{
+    width: 58%;    
+}
+
+.left-middle-content h2{
+    font-size: 2.5rem;
+    font-weight: 200;
+    margin: 2rem 0;
+}
+
+.left-middle-content p{
+    line-height: 2rem;
+    font-size: 1.1rem;
+    font-weight: 420;
+    margin: 2rem 0;
+}
+.right-middle-content{
+    /* padding: 1rem 0; */
+    width: 40%;
+}
+.right-middle-content img{
+    padding: 1rem;
+    width: 80%
+}
+
+.middle-container{
+    max-width: 1200px;
+    /* border-top: 1px solid #cdced0; */
+    margin:0 auto;
+    margin-top: 2rem;
+    padding: 2rem;
+    line-height: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+}
+
+.p2{
+    padding-top: 5rem;
+    font-size: 5rem;
+    font-weight: 700;
+}
+.condition-statement{
+    width: 70%;
+    padding: 2rem;
+    border-top: 1px solid rgb(211, 211, 211);
+}
+
+.download-card{
+   width: 70%;
+   padding: 2rem;
+   background-color: #F5F6F8;
+   border-radius: 5px;
+
+}
+.download-card p{    
+    display: inline;
+    padding: 1rem;
+    font-weight: 600;
+    color: purple;
+
 }
 
 
@@ -357,21 +474,28 @@ footer{
         padding: 0 2rem;
     }
 
-    .middle-section{
+    .middle-content{
         flex-direction: column;
+        justify-content: start;
+        align-items: center;
         margin: 5rem;
         /* border: 1px solid; */
         margin: 1rem 0;
     }
-
-    .mld-content{
+    .right-middle-content{
+        /* padding: 1rem 0; */
         width: 100%;
-    }
-
-    .lower-middle{
+        display: flex;
         align-items: center;
-        text-align: center;
-        padding: 2rem ;
+        justify-content: center;
+    }
+    .hero-content div{
+        width: 90%;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
     }
 }
 
